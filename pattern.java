@@ -202,15 +202,15 @@ public class pattern {
 
         PatternMaker obj = new PatternMaker();
 
-        // obj.increasing_triangle(4, "* ");
-        // obj.decreasing_triangle(5, "* ");
-        //obj.right_side_increasing_triangle(5, "* ");
-        // obj.right_side_decreasing_triangle(5, "* ");
-        // obj.hill_pattern(4, "* ");
-        // obj.reveresd_hill_pattern(5, "* ");
-        //obj.diamond_pattern(5, "* ");
-        //obj.left_side_hill(5, "* ");
-       // obj.right_side_hill(5, "* ");
+    //     obj.left_side_increasing_triangle(4, "* ");
+    //     obj.left_side_decreasing_triangle(5, "* ");
+    //     obj.right_side_increasing_triangle(5, "* ");
+    //     obj.right_side_decreasing_triangle(5, "* ");
+    //     obj.hill_pattern(4, "* ");
+    //     obj.reveresd_hill_pattern(5, "* ");
+    //    obj.diamond_pattern(10, "* ");
+    //     obj.left_side_hill(5, "* ");
+    //    obj.right_side_hill(5, "* ");
 
         //going too add more pattern just for practice :)
     }
