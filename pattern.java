@@ -142,6 +142,56 @@ class PatternMaker{
   
    }
 
+   public void left_side_hill(int n, String s) {
+       
+    for(int i = 1; i <= n ; i++) {
+        for(int j = 1; j < i; j++) {
+
+            System.out.print(s);
+        }
+
+        System.out.println();
+    }
+    for(int i = 1; i <= n ; i++) {
+        for(int j = i; j <=n; j++) {
+
+            System.out.print(s);
+        }
+
+        System.out.println();
+    }
+
+   }
+   
+   public void right_side_hill(int n, String s) {
+       
+    for(int i = 1; i < n ; i++) {
+        for(int j = i; j <=n; j++) {
+
+            System.out.print( "  ");
+        }
+        for(int j = 1; j <=i; j++) {
+
+            System.out.print(s);
+        }
+
+        System.out.println();
+    }
+
+    for(int i = 1; i <= n ; i++) {
+        for(int j = 1; j <=i; j++) {
+
+            System.out.print( "  ");
+        }
+        for(int j = i; j <=n; j++) {
+
+            System.out.print(s);
+        }
+
+        System.out.println();
+    }
+
+   }
 }
 
 
@@ -158,6 +208,10 @@ public class pattern {
         // obj.right_side_decreasing_triangle(5, "* ");
         // obj.hill_pattern(4, "* ");
         // obj.reveresd_hill_pattern(5, "* ");
-          obj.diamond_pattern(5, "* ");
+        //obj.diamond_pattern(5, "* ");
+        //obj.left_side_hill(5, "* ");
+       // obj.right_side_hill(5, "* ");
+
+        //going too add more pattern just for practice :)
     }
 }
