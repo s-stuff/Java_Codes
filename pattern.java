@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class PatternMaker{
     
    public void left_side_increasing_triangle(int n, String s) {
@@ -81,7 +83,7 @@ class PatternMaker{
   
    }
 
-   public void reveresd_hill_pattern(int n, String s) {
+   public void reveresed_hill_pattern(int n, String s) {
        
     for(int i = 1; i <= n ; i++) {
         for(int j = 1; j <=i; j++) {
@@ -193,25 +195,102 @@ class PatternMaker{
 
    }
 }
-
-
+ 
 public class pattern {
     
     public static void main(String[] args) {
         
 
-        PatternMaker obj = new PatternMaker();
+       PatternMaker obj = new PatternMaker(); 
 
-    //     obj.left_side_increasing_triangle(4, "* ");
-    //     obj.left_side_decreasing_triangle(5, "* ");
-    //     obj.right_side_increasing_triangle(5, "* ");
-    //     obj.right_side_decreasing_triangle(5, "* ");
-    //     obj.hill_pattern(4, "* ");
-    //     obj.reveresd_hill_pattern(5, "* ");
-    //    obj.diamond_pattern(10, "* ");
-    //     obj.left_side_hill(5, "* ");
-    //    obj.right_side_hill(5, "* ");
+       int no_symbol;
+       String Symbol;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("""
+            Press-1: Left Side Increasing Triangle
+            Press-2: Left Side Decrease Triangle
+            Press-3: Right Side Increasing Triangle
+            Press-4: Right Side Decrease Triangle
+            Press-5: Hill 
+            Press-6: Reveresed Hill 
+            Press-7: Diamond 
+            Press-8: Left Side Hill
+            Press-9: Right Side Hill
 
-        //going too add more pattern just for practice :)
+
+            Enter here: """);
+      int input = sc.nextInt();
+       switch(input) {
+
+
+        case 1: System.out.println("Enter Symbol: ");
+                Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.left_side_increasing_triangle(no_symbol, Symbol);
+                 break;
+        case 2:
+               System.out.println("Enter Symbol: ");
+                Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.left_side_decreasing_triangle(no_symbol, Symbol);
+               break;
+        case 3:
+                System.out.println("Enter Symbol: ");
+                Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.right_side_increasing_triangle(no_symbol, Symbol);
+               break;
+        case 4:
+                System.out.println("Enter Symbol: ");
+                Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.right_side_decreasing_triangle(no_symbol, Symbol);
+               break;
+        case 5:
+                System.out.println("Enter Symbol: ");
+                Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.hill_pattern(no_symbol, Symbol);
+               break;
+        case 6:
+                System.out.println("Enter Symbol: ");
+                Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.reveresed_hill_pattern(no_symbol, Symbol);
+               break;
+        case 7:
+                System.out.println("Enter Symbol: ");
+               Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.diamond_pattern(no_symbol, Symbol);
+               break;
+        case 8:
+
+                System.out.println("Enter Symbol: ");
+               Symbol = sc.next();
+               System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+               no_symbol = sc.nextInt();
+               obj.left_side_hill(no_symbol, Symbol);
+               break;
+        case 9: 
+                 System.out.println("Enter Symbol: ");
+                 Symbol = sc.next();
+                 System.out.println("How Many Number of " + Symbol  + " You Want to print? : ");
+                 no_symbol = sc.nextInt();
+                 obj.right_side_hill(no_symbol, Symbol);
+                 break;
+
+
+        
+ 
+       }
+
     }
 }
